@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vehicle Inspection System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: black;
+      color: red;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-top: 30px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+   .button {
+  position: relative;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+    button:hover {
+      background-color: #45a049;
+    }
+    fieldset{border-radius: 10PX;
+      margin: 2%;
+
+    }
+    .logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo img {
+  max-height: 30px;
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Isuzu.svg/2560px-Isuzu.svg.png" alt="Logo">
+  </div>
+    <h1>VEHICLE INSPECTION SYSTEM</h1>
+
+  </header>
+  <fieldset>
+<fieldset>
+  <h2>Driver Compliance</h2>
+  <ul>
+    <li>Full Protective gear <input type="checkbox" id="gear"></li>
+    <li>Comment:<input type="text"></li>
+    <li>Substance use/ soberness <input type="checkbox" id="substance_use"></li>
+    <li> Comment:<input type="text"></li>
+    <li>Code of conduct/ etiquette <input type="checkbox" id="conduct"></li>
+    <li> Comment:<input type="text"></li>
+  </ul>
+</fieldset>
+<fieldset>
+  <h2>Vehicle Details</h2>
+  <ul>
+    <li>Truck Reg. Number: <input type="text" id="trucknumber" required></li>
+    <li>Supplier name: <input type="text" id="supplier_name" required></li>
+    <li>Service status: <input type="text" id="service_status" required></li>
+    <li>Insurance status: <input type="text" id="insurance_status" required></li>
+    <li>Container seal status: <input type="text" id="container_seal_status" required></li>
+  </ul>
+</fieldset>
+<fieldset>
+  <h2>Vehicle Condition</h2>
+  <ul>
+    <li>Body structure: <textarea id="body_structure" required></textarea></li>
+    <li>Body mounting: <textarea id="body_mounting" required></textarea></li>
+    <li>Fifth wheel condition: <textarea id="wheel_condition" required></textarea></li>
+    <li>Twist locks coupling: <textarea id="twist_locks_coupling" required></textarea></li>
+  </ul>
+</fieldset>
+<fieldset>
+  <h2>Vehicle Systems</h2>
+  <ul>
+    <li>Check engine signs: <textarea id="engine_status" required></textarea></li>
+    <li>Steering functionality: <textarea id="steering_functionality" required></textarea></li>
+    <li>Fuel gauge reading: <textarea id="fuel_gauge" required></textarea></li>
+    <li>Brake condition: <textarea id="brake_condition" required></textarea></li>
+    <li>Tyre condition: <textarea id="tyre_condition" required></textarea></li>
+    <li>Tyre pressure: <textarea id="tyre_pressure" required></textarea></li>
+  </ul>
+</fieldset>
+<fieldset>
+  <h2>Vehicle Safety</h2>
+  <ul>
+    <li>Horn functionality: <input type="text" id="horn_functionality" required></li>
+    <li>Indicator lights: <input type="text" id="indicator_lights" required></li>
+    <li>Break lights: <input type="text" id="break_lights" required></li>
+    <li>Fuel leaks: <input type="text" id="fuel_leaks" required></li>
+    <li>Air leaks: <input type="text" id="air_leaks" required></li>
+  </ul>
+</fieldset>
+<fieldset>
+  <h2>Vehicle Accessories</h2>
+  <ul>
+    <li>First aid kit: <textarea id="kit" required></textarea></li>
+    <li>Fire extinguisher: <input type="text" id="fire_extinguisher" required></li>
+    <li>Wheel chocks: <input type="text" id="wheel_chocks" required></li>
+  </ul>
+</fieldset>
+<fieldset>
+  <h2>
+    Remarks: <input type="text" id="remarks">
+  </h2>
+</fieldset>
+ 
+</fieldset>
+ <button onclick="submitInspection()" class="button">Submit Inspection</button>
+
+  <script>
+    function submitInspection() {
+      // Code to handle form submission and data processing
+      console.log("Vehicle Inspection Submitted");
+    }
+  </script>
+</body>
+<!--This System was developed by Eric Chweya,Geoffrey Sakora and Darren Wambugu.--> 
+</html>
